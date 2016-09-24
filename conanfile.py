@@ -101,16 +101,17 @@ class BoostConan(ConanFile):
         
         # LIBCXX DEFINITION FOR BOOST B2
         try:
+            # Use C++14 with GCC 6.2 and with clang 8.0; otherwise use C++11
             if "gcc" in str(self.settings.compiler):
                 if str(self.settings.compiler.version) == "6.2":
                     cxx_flags.append("-std=c++14")
                 else:
-                    cxx_flags.append("-std=c++11")
+                    cxx_flags.append("-std=c++0x")
             if "clang" in str(self.settings.compiler):
                 if str(self.settings.compiler.version) == "8.0":
                     cxx_flags.append("-std=c++14")
                 else:
-                    cxx_flags.append("-std=c++11")
+                    cxx_flags.append("-std=c++0x")
 
                 if str(self.settings.compiler.libcxx) == "libc++":
                     cxx_flags.append("-stdlib=libc++")
