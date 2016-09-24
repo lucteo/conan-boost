@@ -11,7 +11,7 @@ class BoostConan(ConanFile):
     options = {"shared": [True, False], "header_only": [True, False], "fPIC": [True, False]}
     default_options = "shared=False", "header_only=False", "fPIC=False"
     counter_config = 0
-    url="https://github.com/lasote/conan-boost"
+    url="https://github.com/lucteo/conan-boost"
     exports = ["FindBoost.cmake"]
     license="Boost Software License - Version 1.0. http://www.boost.org/LICENSE_1_0.txt"
    

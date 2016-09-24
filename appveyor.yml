@@ -7,8 +7,8 @@ environment:
     
     CONAN_UPLOAD: 1
     CONAN_REFERENCE: "Boost/1.60.0"
-    CONAN_USERNAME: "lasote"
-    CONAN_CHANNEL: "ci"
+    CONAN_USERNAME: "lucteo"
+    CONAN_CHANNEL: "stable"
     CONAN_TOTAL_PAGES: 30
     
     matrix:

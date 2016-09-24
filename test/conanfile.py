@@ -3,7 +3,7 @@ from conans import CMake
 import os
 
 ############### CONFIGURE THESE VALUES ##################
-default_user = "lasote"
+default_user = "lucteo"
 default_channel = "testing"
 #########################################################
 
